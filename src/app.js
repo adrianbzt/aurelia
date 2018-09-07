@@ -31,7 +31,7 @@ export class App {
         let isPresent = [];
 
         isPresent = this.todos.filter((obj) => {
-            if(obj.description == newTodo) {
+            if(obj.description == newTodo && obj.done == false) {
                 return obj.description;
             }
         });
